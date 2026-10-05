@@ -242,14 +242,18 @@ h1 {
     margin-bottom: 1.2rem;
 }
 
-.subtitle a {
+.subtitle a,
+.bio a,
+.work-item p a {
     color: var(--link);
     text-decoration: none;
     border-bottom: 1.5px solid var(--tag-bg);
     transition: border-color 0.2s;
 }
 
-.subtitle a:hover {
+.subtitle a:hover,
+.bio a:hover,
+.work-item p a:hover {
     border-color: var(--accent);
 }
 
@@ -815,5 +819,28 @@ footer {
 
     .work-item:hover {
         transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 1rem 1.1rem;
+    }
+
+    .nav-name {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        gap: 0.75rem;
+    }
+
+    .nav-links a {
+        font-size: 0.76rem;
+    }
+
+    .nav-links a[href="#about"] {
+        display: none;
     }
 }
