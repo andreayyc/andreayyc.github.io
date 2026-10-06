@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a4c2f"/>
+      <stop offset="0.45" stop-color="#c8935f"/>
+      <stop offset="1" stop-color="#8a5a3a"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a8853a"/>
+      <stop offset="0.5" stop-color="#f8e9b0"/>
+      <stop offset="1" stop-color="#b8923f"/>
+    </linearGradient>
+    <clipPath id="bristles">
+      <path d="M2.6 -1.4 C2.2 2 3.6 6.5 2.7 11 L-2.7 11 C-3.6 7 -3 2.5 2.6 -1.4 Z"/>
+    </clipPath>
+  </defs>
+  <g opacity="0.6">
+  <ellipse cx="4.6" cy="29.4" rx="4.8" ry="1.5" fill="#b5694f" opacity="0.32"/>
+  <g transform="translate(5 29) rotate(-135)" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-2.5 16 L2.5 16 L1.5 34.2 Q0 36.2 -1.5 34.2 Z" fill="url(#wood)" stroke="#4e3524" stroke-width="0.7"/>
+    <path d="M-0.9 18.5 L-0.6 32 M0.9 20 L0.6 29.5" fill="none" stroke="#5f3b23" stroke-width="0.35" opacity="0.55"/>
+    <rect x="-2.9" y="11" width="5.8" height="5.2" rx="0.6" fill="url(#metal)" stroke="#6e5524" stroke-width="0.7"/>
+    <path d="M-2.9 12.8 H2.9 M-2.9 14.5 H2.9" stroke="#6e5524" stroke-width="0.35" opacity="0.6"/>
+    <path d="M2.6 -1.4 C2.2 2 3.6 6.5 2.7 11 L-2.7 11 C-3.6 7 -3 2.5 2.6 -1.4 Z" fill="#ead9c2"/>
+    <path clip-path="url(#bristles)" d="M-6 -4 H7 V7.2 C5 6.2 3.4 6.4 2 7.2 C0.6 8 -0.4 6.6 -1.6 6.8 C-2.6 7 -3.2 7.6 -6 7 Z" fill="#b5694f"/>
+    <g clip-path="url(#bristles)" fill="#f6dc8c">
+      <circle cx="0.9" cy="1.6" r="0.55"/>
+      <circle cx="-0.9" cy="4.2" r="0.45"/>
+      <circle cx="1.7" cy="4.9" r="0.4"/>
+      <circle cx="0.2" cy="5.9" r="0.3" fill="#fff6d6"/>
+    </g>
+    <path d="M2.6 -1.4 C2.2 2 3.6 6.5 2.7 11 L-2.7 11 C-3.6 7 -3 2.5 2.6 -1.4 Z" fill="none" stroke="#4e3524" stroke-width="0.7"/>
+  </g>
+  </g>
+</svg>

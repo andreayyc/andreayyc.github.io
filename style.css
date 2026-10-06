@@ -27,6 +27,21 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    cursor: url("cursor-brush.svg") 2 21, auto;
+}
+
+/* Over text the brush fades a little more so words stay readable */
+p, h1, h2, h3, h4, h5, h6, li, blockquote, figcaption, span, time, em, strong {
+    cursor: url("cursor-brush-text.svg") 2 21, auto;
+}
+
+a, a *,
+button, button * {
+    cursor: url("cursor-brush-dab.svg") 2 21, pointer;
+}
+
 body {
     font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
     color: var(--text);
@@ -843,4 +858,15 @@ footer {
     .nav-links a[href="#about"] {
         display: none;
     }
+}
+
+/* Soft paint wash that trails the brush cursor (see brush.js) */
+.brush-trail {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 200;
+    opacity: 0.7;
 }
