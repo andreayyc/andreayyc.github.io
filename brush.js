@@ -4,7 +4,7 @@
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    var LIFE = 1100;      // ms a dab stays visible
+    var LIFE = 550;       // ms a dab stays visible
     var RADIUS = 12;      // px
     var SPACING = 6;      // px between dabs along the stroke
     var PEAK = 0.1;       // opacity of a fresh dab
@@ -49,7 +49,7 @@
 
     var points = [];
     var sparks = [];
-    var SPARK_LIFE = 1000;
+    var SPARK_LIFE = 650;
     var last = null;
     var running = false;
 
