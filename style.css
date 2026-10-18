@@ -870,3 +870,16 @@ footer {
     z-index: 200;
     opacity: 0.7;
 }
+
+/* Ink on paper: text bleeds slightly and has softly irregular edges.
+   The #ink-rough filter is defined inline at the top of each page. */
+body {
+    color: #463c35;
+}
+
+main,
+nav,
+footer {
+    filter: url(#ink-rough);
+    text-shadow: 0 0 0.7px rgba(70, 56, 46, 0.55);
+}
